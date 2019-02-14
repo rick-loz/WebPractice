@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<meta charset="utf-8">
+	<title>Practice 1</title>
+</head>
+<body>
+	<header>
+		<h1>Registry Form</h1>
+		<nav>
+			<ul id="menu">
+				<li>Home</li>
+				<li>About the site</li>
+				<li class="selected">Registry</li>
+				<li>Contact</li>
+				<li>Copyright</li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<form>
+			<fieldset>
+				<legend>New Acccount Registry</legend>
+				<span>Your information is safe with us</span>
+				<div>
+					<label for="name">
+						<div>Complete Name:</div>
+						<input type="text" id="name" class="formElement">
+					</label>
+				</div>
+				<div>
+					<label for="email">
+						<div>Email:</div>
+						<input type="email" id="email" class="formElement">
+					</label>
+				</div>
+				<div>
+					<label for="password">
+						<div>Password:</div>
+						<input type="password" id="password" class="formElement">
+					</label>
+				</div>
+				<div>
+					<label for="password-conf">
+						<div>Password Confirmation:</div>
+						<input type="password" id="password-conf" class="formElement">
+					</label>
+				</div>
+				<div>
+					<div>Country:</div>
+					<select id="country">
+						<option value="Default">Select a country...</option>
+						<option value="MX">Mexico</option>
+						<option value="FR">France</option>
+						<option value="JP">Japan</option>
+					</select>
+				</div>
+				<div>
+					<div>Gender:</div>
+					<div>
+						<label for="gender">
+							<input type="radio" name="gender" value="M">
+							<span>Masculine:</span>
+						</label>
+					</div>
+					<div>
+						<label for="gender">
+							<input type="radio" name="gender" value="F">
+							<span>Femenine:</span>
+						</label>
+					</div>
+				</div>
+				<div>
+					<input type="button" id="cancel" value="Cancel" class="button">
+					<input type="submit" id="submit" value="Submit" class="button">
+				</div>
+			</fieldset>
+		</form>
+	</main>
+	<script type="text/javascript" src="./js/index.js"></script>
+</body>
+</html>
